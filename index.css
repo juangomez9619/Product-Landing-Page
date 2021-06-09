@@ -1,3 +1,33 @@
-h1 {
-  color: green;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  height: 100px;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  border-style: solid;
+}
+
+#header-img {
+  width: 30%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+#header-img img {
+  max-width: auto;
+  height: 100%;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
 }
