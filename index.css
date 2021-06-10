@@ -8,7 +8,7 @@ body {
 }
 
 #header {
-  height: 100px;
+  height: 20%;
   background-color: #fff;
   position: fixed;
   width: 100%;
@@ -49,7 +49,7 @@ body {
 }
 
 main {
-  padding-top: 130px;
+  padding-top: 220px;
   margin: 0 auto;
 
   width: 90%;
@@ -67,15 +67,65 @@ form {
 
 #email {
   text-align: center;
+  margin: 4vh 0 2vh 0;
+  font-size: 20px;
 }
 
 #submit {
-  background-color: orange;
-  border-radius: 5px;
+  background-color: #ff9900;
+  border-radius: 0;
   border-style: none;
+
+  font-size: 20px;
 }
 
 #submit:hover {
   cursor: pointer;
-  background-color: red;
+  background-color: #ffbf00;
+  font-weight: bolder;
+}
+
+.content {
+  margin-top: 15px;
+
+  width: 70%;
+  padding: 1% 1%;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 790px) {
+  #header {
+    height: 25%;
+  }
+  #nav-bar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #title,
+  #nav-bar {
+    font-size: 5vmin;
+  }
+}
+
+.content img {
+  display: block;
+  max-width: 20%;
+  height: auto;
+  margin: auto;
+}
+
+@media (max-width: 270px) {
+  #header-img {
+    width: 10%;
+  }
+  #nav-bar {
+    width: 90%;
+  }
+
+  #header-img img {
+    width: 0;
+    height: 0;
+  }
 }
